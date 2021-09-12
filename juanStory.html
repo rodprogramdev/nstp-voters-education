@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUAN's STORY</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <nav>
+        <a href="index.html">HOME PAGE</a>
+      </nav>
+      <div class="img">
+        <img src="" alt="ALTERNATE TEXT JUAN'S IMAGE-NOTE to self I'm going to create a character image here"
+          id="juan" />
+      </div>
+      <h1>ONCE UPON A TIME</h1>
+      <br />
+      <p>
+        There was Juan who was a proud citizen of the Philippines. However, he
+        was not that informed about his rights of suffrage. He knew that most
+        people practice it, but he doesn’t understand its importance.
+      </p>
+      <br />
+      <p>
+        Now, as a person like Juan. We need to go on a learning journey so
+        that we can help Juan understand the importance of our rights of
+        suffrage. Try to answer each of the questions below and maximize the
+        use of the website to gain points for your teams.
+      </p>
+
+      <h2>GROUP ACTIVITY TASK</h2>
+      <h3>LET's GO READ ABOUT VOTER's EDUCATION</h3>
+      <p>After reading the story of Juan, members of each group can strategize
+        and read through our <strong>VOTER's EDUCATION</strong> module. The teams will be given a 20minute
+        time to go through the module and try to learn more about <strong>VOTER's EDUCATION.</strong>
+      </p>
+      <br />
+      <p>Now that everyone is ready together with their respective groups. Let’s also go visit the website <a
+          href="https://voterseducation311.weebly.com/" target="_blank">https://voterseducation311.weebly.com/</a></p>
+
+      <p>Each team are to assign a team leader who will post their answers in the VOTER’s EDUCATION channel.
+        For this activity. You can assign tasks to each member and help each other out in figuring out the answers to
+        the questions provided in each task. </p>
+    </div>
+  </header>
+  <section>
+    <div class="tasks">
+      <div class="form">
+        <div class="form__task1">
+          <h3>TASK 1</h3>
+          <form name="task1" action="task1.html" onsubmit="return validateAnswer1()">
+            <p class="task__paragraph">This is the means to disseminate information through materials and programs that
+              are designed <br />
+              to inform citizens about the specific mechanics of the voting process. This will include providing
+              information<br />
+              about the right to suffrage and its importance.
+            </p>
+            <br />
+            <p class="task__paragraph">It also includes information on who are eligible to vote; how and where they can
+              register and the <br />
+              process on how electors can check the voter lists to ensure that they have been duly included.</p>
+            <br />
+            <label class="tasks__label" for="task1__answer">Try to find the KEYWORD that relates to this
+              DEFINITION</label>
+  
+            <input type="text" placeholder="write your answer here!!" id="task1__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+          
+        </div>
+        <br />
+        <div class="form__task2">
+          <h3>TASK 2</h3>
+          <br />
+          <form name="task2" action="task2.html" onsubmit="return validateAnswer2()">
+            <label class="tasks__label" for="task2__answer">Congratulations for 
+              completing the first task Juan and friends. Now for the next task. Try to look for the video of <strong>"MICA"</strong>. From the 
+            website in the link above. The hint is related to the process of getting your name 
+            included in the lists of voters before the election.</label>
+            <input type="text" placeholder="write your answer here!!" id="task2__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+          
+        </div>
+        <br />
+        <div class="form__task3">
+          <h3>TASK 3</h3>
+          <form name="task3" action="task3.html" onsubmit="return validateAnswer3()">
+            <label class="tasks__label" for="task3__answer">What is the name of the student that discussed the topic about 
+              SMART VOTER?
+            </label>
+            <input type="text" placeholder="write your answer here!!" id="task3__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
+
+        <div class="form__task4">
+          <h3>TASK 4</h3>
+          <form name="task4" action="task4.html" onsubmit="return validateAnswer4()">
+            <label class="tasks__label" for="task4__answer">What is the main reason why we have THREE BRANCHES IN OUR GOVERNMENT?
+            </label>
+            <input type="text" placeholder="***** *** *******" id="task4__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script>
+    //https://www.zealtyro.com/2020/09/how-to-disable-inspect-element-and-view-page-source.html
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+
+    function validateAnswer1() {
+      let x = document.forms["task1"]["task1__answer"].value;
+      if (x !== "Voter Education") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: Type the first letters of the words in capital :) ) ");
+        return false;
+      }
+    }
+
+    function validateAnswer2() {
+      let x = document.forms["task2"]["task2__answer"].value;
+      if (x !== "Voter Registration") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: Type the first letters of the words in capital :) ) ");
+        return false;
+      }
+    }
+
+    function validateAnswer3() {
+      let x = document.forms["task3"]["task3__answer"].value;
+      if (x !== "Christine") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: Type the first letters of the words in capital :) ) ");
+        return false;
+      }
+    }
+
+    function validateAnswer4() {
+      let x = document.forms["task3"]["task3__answer"].value;
+      if (x !== "Check and Balance") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: C**** *** *******) ");
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
