@@ -69,7 +69,7 @@
             <label class="tasks__label" for="task1__answer">Try to find the KEYWORD that relates to this
               DEFINITION</label>
   
-            <input type="text" placeholder="write your answer here!!" id="task1__answer" />
+            <input type="text" placeholder="Type your answer here!!" id="task1__answer" />
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
           
@@ -81,9 +81,8 @@
           <form name="task2" action="task2.html" onsubmit="return validateAnswer2()">
             <label class="tasks__label" for="task2__answer">Congratulations for 
               completing the first task Juan and friends. Now for the next task. Try to look for the video of <strong>"MICA"</strong>. From the 
-            website in the link above. The hint is related to the process of getting your name 
-            included in the lists of voters before the election.</label>
-            <input type="text" placeholder="write your answer here!!" id="task2__answer" />
+            website in the link above. </label>
+            <input type="text" placeholder="Type your answer here!!" id="task2__answer" />
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
           
@@ -95,7 +94,7 @@
             <label class="tasks__label" for="task3__answer">What is the name of the student that discussed the topic about 
               SMART VOTER?
             </label>
-            <input type="text" placeholder="write your answer here!!" id="task3__answer" />
+            <input type="text" placeholder="Type your answer here!!" id="task3__answer" />
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
         </div>
@@ -131,7 +130,7 @@
     function validateAnswer2() {
       let x = document.forms["task2"]["task2__answer"].value;
       if (x !== "Voter Registration") {
-        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: Type the first letters of the words in capital :) ) ");
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: Type the first letters of the words in capital. The hint is related to the process of getting your name included in the lists of voters before the election. ) ");
         return false;
       }
     }
