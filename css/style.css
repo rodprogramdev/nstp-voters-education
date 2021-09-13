@@ -31,6 +31,7 @@ h1,h2,h3{
     position: relative;
 }
 
+
 .header__heading{
     position: absolute;
     top:50%;
@@ -42,6 +43,12 @@ h1,h2,h3{
 
 
 /*************************JUAN STORY PAGE***************************/
+.juan__header{
+    background-color: yellow;
+    height:100vh;
+}
+
+
 .form{
     position: relative;
 }
@@ -53,6 +60,19 @@ h1,h2,h3{
     width: 40%;
     text-align: center;
     margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .img{
+        height: 30%;
+        width: 40%;
+    }
+
+    .juan__header {
+      height: 200vh;
+    }
 }
 
 #juan{
