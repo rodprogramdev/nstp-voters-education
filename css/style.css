@@ -145,6 +145,12 @@ p{
 /*******************TASK1**************************/
 .form__task1{
     height: 100vh;
+    background-image:url('../images/pexels-cottonbro-4669146.jpg');
+    background-position:center;
+    color:#fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .header__task1{
     background-color: yellow;
