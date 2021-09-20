@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color:lightblue;
+    background-color:#fff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -52,7 +52,7 @@ h1,h2,h3{
 
 /*************************JUAN STORY PAGE***************************/
 .juan__header{
-    background-color: yellow;
+    background-color: #FFEF78;
     height:120vh;
 }
 
@@ -104,7 +104,7 @@ p{
 
 .tasks{
     height: 100vh;
-    padding: 1rem;
+    /* padding: 1rem; */
    
 }
 .task__paragraph{
@@ -196,7 +196,7 @@ p{
 
 /*******************TASK1**************************/
 .form__task1{
-    padding: 5%;
+    padding: 2%;
     height: 100vh;
     background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.472) , rgba(0, 0, 255, 0.616)),url(../images/pexels-element-digital-1550337.jpg);
     background-position:center;
@@ -206,7 +206,7 @@ p{
 
 }
 .header__task1{
-    background-color: yellow;
+    /* background-color: yellow; */
     text-align: center;
     
 }
