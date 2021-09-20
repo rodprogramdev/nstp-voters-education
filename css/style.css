@@ -79,12 +79,12 @@ dfn:hover{
 
 @media only screen and (max-width: 600px) {
     .img{
-        height: 30%;
-        width: 40%;
+        height: 10%;
+        width: 10%;
     }
 
     .juan__header {
-      height: 100vh;
+      height: 160vh;
     }
 }
 
