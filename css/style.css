@@ -233,6 +233,11 @@ p{
     
 }
 
+@media only screen and (max-width: 600px) {
+    .form__task1{
+    margin-bottom:-10%;
+    }
+}
 
 /*******************TASK2**************************/
 .form__task2{
@@ -252,6 +257,7 @@ p{
     .form__task2{
     background-position:-400px 0px;
     background-position: no-repeat;
+    margin-bottom:-10%;
     }
 }
 
