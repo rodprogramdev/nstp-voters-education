@@ -53,7 +53,7 @@ h1,h2,h3{
 /*************************JUAN STORY PAGE***************************/
 .juan__header{
     background-color: yellow;
-    height:150vh;
+    height:120vh;
 }
 
 
@@ -63,11 +63,11 @@ h1,h2,h3{
 
 .img{
     
-    background-color: blue;
-    height: 40%;
-    width: 40%;
+    height: 10%;
+    width: 10%;
     text-align: center;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 
