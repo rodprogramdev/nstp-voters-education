@@ -119,6 +119,7 @@ p{
     /* width: 50%; */
     /* background-color: blue; */
     text-align: center;
+    padding: 5%;
 }
 
 #task1__answer{
@@ -215,11 +216,17 @@ p{
     padding: 5%;
     height: 100vh;
     /* background-color: green; */
-    background-image:linear-gradient(to bottom, rgba(255, 0, 21, 0.472) , rgba(0, 0, 255, 0.616)),url(../images/smart-voter.png);
-    background-position:center;
+    background-image:linear-gradient(to bottom, rgba(255, 0, 21, 0.472) , rgba(0, 0, 255, 0.616)),url(../images/smart-voter2.png);
+    background-position:left right;
     background-size: cover;
    
 }
+
+@media only screen and (max-width: 600px) {
+    .form__task2{background-position:left top;}
+}
+
+
 /*******************TASK3**************************/
 .form__task3{
     padding: 5%;
