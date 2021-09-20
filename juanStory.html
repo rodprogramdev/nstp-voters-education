@@ -145,6 +145,21 @@
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
         </div>
+        <div class="form__task5">
+          <h3>TASK 5</h3>
+          <form name="task5" action="task5.html" onsubmit="return validateAnswer5()">
+            <label class="tasks__label" for="task5__answer">This is the description of one of the quality of 
+              a leader we as voters should be looking for. How does your candidate decide on issues? How does he lead 
+              his family, constituents? Does he/she make decisions that promote justice, righteousness and peace for all 
+              law-abiding Filipinos? Or does he/she decide based on what is convenient for him/her?
+              Does he/she use his influence as a platform for governing with prudence and foresith for the good of many? 
+              A candidate who governs righteously does not accept or offer bribes, and leads an example of eradicating graft 
+              and corruption within his area of influence.
+            </label>
+            <input type="text" placeholder="******** **********" id="task5__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
         
       </div>
 
@@ -207,6 +222,14 @@ Photo by Element5 Digital from Pexels
       let x = document.forms["task4"]["task4__answer"].value;
       if (x !== "Check And Balance") {
         alert("Sorry your answer is INCORRECT!!! Please try again (HINT: C**** A** *******) ");
+        return false;
+      }
+    }
+
+    function validateAnswer5() {
+      let x = document.forms["task5"]["task5__answer"].value;
+      if (x !== "Righteous Governance") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: ******** ****r****e) ");
         return false;
       }
     }
