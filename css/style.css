@@ -45,7 +45,7 @@ h1,h2,h3{
 /*************************JUAN STORY PAGE***************************/
 .juan__header{
     background-color: yellow;
-    height:100vh;
+    height:150vh;
 }
 
 
@@ -61,6 +61,7 @@ h1,h2,h3{
     text-align: center;
     margin: 0 auto;
 }
+
 
 
 
@@ -112,9 +113,16 @@ p{
 #task1__answer{
     text-align:center;
     margin: 0 auto;
-
     display: block;
-    width: 30%;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #task1__answer{
+        width: 100%;
+        padding: .5rem;
+    }
+
 }
 
 #task2__answer{
