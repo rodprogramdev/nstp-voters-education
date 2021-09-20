@@ -116,8 +116,6 @@ p{
 .tasks__label{
     display: block;
     /* width: 50%; */
-  
-  
     /* background-color: blue; */
     text-align: center;
 }
@@ -159,7 +157,6 @@ p{
 #task3__answer{
     text-align:center;
     margin: 0 auto;
-
     display: block;
     width: 50%;
     border: 2px solid rgb(208, 255, 0);
@@ -196,7 +193,7 @@ p{
 
 /*******************TASK1**************************/
 .form__task1{
-    padding: 2%;
+    padding: 5%;
     height: 100vh;
     background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.472) , rgba(0, 0, 255, 0.616)),url(../images/pexels-element-digital-1550337.jpg);
     background-position:center;
@@ -214,16 +211,24 @@ p{
 
 /*******************TASK2**************************/
 .form__task2{
+    padding: 5%;
     height: 100vh;
+    background-color: green;
 }
 /*******************TASK3**************************/
 .form__task3{
+    padding: 5%;
     height: 100vh;
+    background-color: blue;
+
 }
 
 /*******************TASK4**************************/
 .form__task4{
+    padding: 5%;
     height: 100vh;
+    background-color: pink;
+
 }
 /*******************FOOTER************************/
 footer{
