@@ -162,6 +162,14 @@ p{
     width: 30%;
 }
 
+@media only screen and (max-width: 600px) {
+    #task3__answer{
+        width: 100%;
+        padding: .5rem;
+    }
+
+}
+
 
 #task4__answer{
     text-align:center;
@@ -169,6 +177,14 @@ p{
 
     display: block;
     width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    #task4__answer{
+        width: 100%;
+        padding: .5rem;
+    }
+
 }
 
 
