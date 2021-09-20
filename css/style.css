@@ -41,6 +41,14 @@ h1,h2,h3{
     text-align:center;
 }
 
+@media only screen and (max-width: 600px) {
+    .header__heading{
+        display: inline-block;
+        width: 100%;
+    }
+    
+}
+
 
 /*************************JUAN STORY PAGE***************************/
 .juan__header{
