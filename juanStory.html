@@ -161,6 +161,17 @@
           </form>
         </div>
 
+        <div class="form__task6">
+          <h3>TASK 6</h3>
+          <form name="task6" action="task6.html" onsubmit="return validateAnswer6()">
+            <label class="tasks__label" for="task6__answer">
+              This is one of the corrupt practice of politicians. It is a form of favoritism which is granted to relative and friends in various fields, including business, politics, entertainment, sports, fitness, religion and other activities. 
+            </label>
+            <input type="text" placeholder="********" id="task6__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
+
         <div class="form__task10">
           <h3>TASK 10</h3>
           <form name="task10" action="task10.html" onsubmit="return validateAnswer10()">
@@ -248,6 +259,15 @@ Photo by Element5 Digital from Pexels
       let x = document.forms["task5"]["task5__answer"].value;
       if (x !== "Righteous Governance") {
         alert("Sorry your answer is INCORRECT!!! Please try again (HINT: ******** ****r****e) ");
+        return false;
+      }
+    }
+
+
+    function validateAnswer6() {
+      let x = document.forms["task6"]["task6__answer"].value;
+      if (x !== "**p****m") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: ) ");
         return false;
       }
     }
