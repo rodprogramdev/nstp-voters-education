@@ -172,6 +172,17 @@
           </form>
         </div>
 
+        <div class="form__task7">
+          <h3>TASK 7</h3>
+          <form name="task7" action="task7.html" onsubmit="return validateAnswer7()">
+            <label class="tasks__label" for="task7__answer">
+              This is one of the corrupt practice of politicians. It is a form of favoritism which is granted to relative and friends in various fields, including business, politics, entertainment, sports, fitness, religion and other activities. 
+            </label>
+            <input type="text" placeholder="Separation of Power" id="task7__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
+
         <div class="form__task10">
           <h3>TASK 10</h3>
           <form name="task10" action="task10.html" onsubmit="return validateAnswer10()">
@@ -268,6 +279,14 @@ Photo by Element5 Digital from Pexels
       let x = document.forms["task6"]["task6__answer"].value;
       if (x !== "Nepotism") {
         alert("Sorry your answer is INCORRECT!!! Please try again (HINT: **p****m) ");
+        return false;
+      }
+    }
+
+    function validateAnswer7() {
+      let x = document.forms["task7"]["task7__answer"].value;
+      if (x !== "Separation of Power") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: With power comes great responsibility) ");
         return false;
       }
     }
