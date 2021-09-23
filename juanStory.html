@@ -177,12 +177,25 @@
           <form name="task7" action="task7.html" onsubmit="return validateAnswer7()">
             <label class="tasks__label" for="task7__answer">
               This is the power of the Three Branches of the Government that helps ensure accountability
-              in eahc of the branches of the government.
+              in each of the branches of the government.
             </label>
             <input type="text" placeholder="********** ** *****" id="task7__answer" />
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
         </div>
+
+        <div class="form__task8">
+          <h3>TASK 8</h3>
+          <form name="task8" action="task8.html" onsubmit="return validateAnswer8()">
+            <label class="tasks__label" for="task8__answer">
+             This system comprise of the use of appropriate technology for registration, voting, counting of votes, 
+             and canvassing / transmital of election results.
+            </label>
+            <input type="text" placeholder="********* ******** ******" id="task8__answer" />
+            <!-- <button type="button" onclick="myFunction()">Submit</button> -->
+          </form>
+        </div>
+
 
         <div class="form__task10">
           <h3>TASK 10</h3>
@@ -288,6 +301,14 @@ Photo by Element5 Digital from Pexels
       let x = document.forms["task7"]["task7__answer"].value;
       if (x !== "Separation of Power") {
         alert("Sorry your answer is INCORRECT!!! Please try again (HINT: With power comes great responsibility) ");
+        return false;
+      }
+    }
+
+    function validateAnswer8() {
+      let x = document.forms["task8"]["task8__answer"].value;
+      if (x !== "Automated Election System") {
+        alert("Sorry your answer is INCORRECT!!! Please try again (HINT: This is related to tehnology in the process of voting.) ");
         return false;
       }
     }
