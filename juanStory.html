@@ -217,7 +217,7 @@
               Now its time to practice your detective skills. Go and try to research the memorable event that led to a lot of human rights violations, corruption, deaths and abuse of power in Philippine history. What is this event that was declared on Sept 21, 1972
 
             </label>
-            <input type="text" placeholder="martial law" id="task10__answer" />
+            <input type="text" placeholder="******* ***" id="task10__answer" />
             <!-- <button type="button" onclick="myFunction()">Submit</button> -->
           </form>
         </div>
@@ -329,6 +329,14 @@ Photo by Element5 Digital from Pexels
     function validateAnswer9() {
       let x = document.forms["task9"]["task9__answer"].value;
       if (x !== "Track Record") {
+        alert("Sorry your answer is INCORRECT!!!");
+        return false;
+      }
+    }
+
+    function validateAnswer10() {
+      let x = document.forms["task10"]["task10__answer"].value;
+      if (x !== "Martial Law") {
         alert("Sorry your answer is INCORRECT!!!");
         return false;
       }
