@@ -10,7 +10,8 @@ html{
 
 body{
     background-color:#fff;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Fredoka One', cursive;
 }
 
 /* header{
@@ -40,6 +41,7 @@ h1,h2,h3{
     display: inline-block;
     text-align:center;
 }
+
 
 @media only screen and (max-width: 600px) {
     .header__heading{
