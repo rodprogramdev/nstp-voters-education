@@ -36,7 +36,7 @@
             </div>
 
             <div class="canvas">
-                <canvas id="animation" width="800" height="200"></canvas>
+                <canvas id="animation" width="200" height="100"></canvas>
             </div>
             
         </div>
@@ -64,10 +64,11 @@
         //   var juan= new juanClass();
 
           var canvas,canvasContext;
-          var juanX = 75;
-          var juanY = 75;
-          var juanHeight=5;
-          var juanWidth =5;
+          var juanX = 0;
+          var juanY = 0;
+          var juanWidth =100;
+          var juanHeight=100;
+         
 
           window.onload = function () {
               canvas = document.getElementById('animation');
@@ -80,18 +81,23 @@
               juanPic.src = "images/juan.png";
               
               var framesPerSecond = 30;
-              setInterval(updateAll, 100/framesPerSecond);
+              setInterval(updateAll, 1000/framesPerSecond);
           }
 
           function updateAll(){
               juanX++;
-              canvasContext.fillStyle = 'black';
+              canvasContext.fillStyle = 'white';
               canvasContext.fillRect(0,0, canvas.width, canvas.height);
 
               if (juanLoaded){
-                  canvasContext.drawImage(juanPic,50,180, juanX - juanPic.width/2, juanY - juanPic.height /2);
+                  canvasContext.drawImage(juanPic,juanX,juanY,juanWidth,juanHeight );
+                //   if(juanWidth > canvas.width){
+
+                //   }
               }
           }
+
+          //https://www.w3schools.com/tags/canvas_drawimage.asp
           /*
           function juanClass(){
               this.x = 75;  // x position
