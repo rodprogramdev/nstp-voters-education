@@ -34,6 +34,10 @@
                 <a class="header__link" href="juanStory.html">CLICK HERE TO PLAY</a>
 
             </div>
+
+            <div class="canvas">
+                <canvas id="animation" width="800" height="200"></canvas>
+            </div>
             
         </div>
     </header>
@@ -52,5 +56,50 @@
         
       Your browser does not support the audio element.
       </audio> 
+
+
+      <script>
+          var juanPic = document.createElement("img");
+          var juanLoaded = false;
+        //   var juan= new juanClass();
+
+          var canvas,canvasContext;
+          var juanX = 75;
+          var juanY = 75;
+          var juanHeight=5;
+          var juanWidth =5;
+
+          window.onload = function () {
+              canvas = document.getElementById('animation');
+              canvasContext = canvas.getContext('2d');
+
+              juanPic.onload = function(){
+                  juanLoaded = true;
+              }
+
+              juanPic.src = "images/juan.png";
+              
+              var framesPerSecond = 30;
+              setInterval(updateAll, 100/framesPerSecond);
+          }
+
+          function updateAll(){
+              juanX++;
+              canvasContext.fillStyle = 'black';
+              canvasContext.fillRect(0,0, canvas.width, canvas.height);
+
+              if (juanLoaded){
+                  canvasContext.drawImage(juanPic,50,180, juanX - juanPic.width/2, juanY - juanPic.height /2);
+              }
+          }
+          /*
+          function juanClass(){
+              this.x = 75;  // x position
+              this.y = 75; // y position
+              this.height = 40;
+              this.width = 40;
+          }
+          */
+      </script>
 </body>
 </html>

@@ -54,6 +54,13 @@ h1,h2,h3{
     color: blue;
 }
 
+.canvas{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 @media only screen and (max-width: 600px) {
     .header__heading{
         display: inline-block;
